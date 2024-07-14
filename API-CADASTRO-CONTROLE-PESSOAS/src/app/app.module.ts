@@ -9,6 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfilesComponent } from './pages/profiles/profiles.component';
 import { ProfilesListComponent } from './pages/profiles/profiles-list/profiles-list.component';
 import { ProfilesCreateUpdateComponent } from './pages/profiles/profiles-create-update/profiles-create-update.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ProfileService } from './services/profile.service';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,11 @@ import { ProfilesCreateUpdateComponent } from './pages/profiles/profiles-create-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

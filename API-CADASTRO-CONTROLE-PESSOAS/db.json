@@ -1,0 +1,37 @@
+{
+    "profiles": [
+      {
+        "id": 1,
+        "nome": "João",
+        "perfil": "Desenvolvedor",
+        "idade": 30,
+        "email": "joao@example.com",
+        "ativo": true,
+        "pais": "Brasil",
+        "nivelExperiencia": 5
+      },
+      {
+        "id": 2,
+        "nome": "Paulo",
+        "perfil": "Usuário",
+        "idade": 20,
+        "email": "paulo@example.com",
+        "ativo": true,
+        "pais": "Brasil",
+        "nivelExperiencia": 4
+      },
+      {
+        "id": 3,
+        "nome": "Lucas",
+        "perfil": "Moderador",
+        "idade": 40,
+        "email": "lucas@example.com",
+        "ativo": true,
+        "pais": "Brasil",
+        "nivelExperiencia": 7
+      }
+
+    ]
+  }
+  
+  
