@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ProfileService {
 
-  api = 'http://localhost:51023/profile'
+  api = "http://localhost:3000/profiles"
   constructor(private http: HttpClient) { }
   
   buscarTodos(){

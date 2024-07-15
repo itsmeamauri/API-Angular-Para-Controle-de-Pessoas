@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfileService } from 'src/app/services/profile.service';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-profiles-list',
@@ -9,7 +10,14 @@ import { ProfileService } from 'src/app/services/profile.service';
 export class ProfilesListComponent {
 constructor(private profileService: ProfileService){}
 
+profiles: any;
+
 ngOnInit(){
-  
+
+  debugger
+    console.log('ONINIT')
+  this.profileService.buscarTodos().subscribe(result => {
+this.profiles = result;
+  });
 }
 }
