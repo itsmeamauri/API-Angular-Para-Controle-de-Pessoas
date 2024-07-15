@@ -1,3 +1,4 @@
+import { JsonpClientBackend } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ProfileService } from 'src/app/services/profile.service';
 
@@ -9,7 +10,9 @@ import { ProfileService } from 'src/app/services/profile.service';
 export class ProfilesComponent {
 profiles: any;
 
-constructor(private profileService: ProfileService){}
+constructor(private profileService: ProfileService){
+  
+}
 
 
 ngOnInit(){
@@ -17,7 +20,9 @@ ngOnInit(){
     console.log('ONINIT')
   this.profileService.buscarTodos().subscribe(result => {
 this.profiles = result;
-  });
-}
+}, error =>{
+console.error(error);
+});  
 
+}
 }

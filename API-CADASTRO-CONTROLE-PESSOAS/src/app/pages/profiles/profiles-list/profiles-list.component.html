@@ -6,22 +6,26 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">&#8226;</th>
+      <th scope="col">NOME</th>
+      <th scope="col">PERFIL</th>
+      <th scope="col">IDADE</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
 
     <tr *ngFor="let profile of profiles">
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>mdo</td>
+      <th scope="row">{{profiles.id}}</th>
+      <td>{{profiles.nome}}</td>
+      <td>{{profiles.idade}}</td>
+      <td>{{profiles.email}}</td>
+      <td>{{profiles.email}}</td>
+      <td>{{profiles.email}}</td>
     </tr>
     
-    {{ profiles | json }}
+  
   </tbody>
 </table>
 
